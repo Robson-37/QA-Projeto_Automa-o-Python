@@ -21,11 +21,11 @@ QA_Automation_Project/
 ├── assets/             # Prints e recortes dos elementos gráficos (.png)
 ├── logs/               # Screenshots e evidências de falhas (gerado automaticamente)
 ├── pages/              # Classes do Page Object Model (BasePage, LoginPage, etc.)
-│   ├── __init__.py
+│   |
 │   ├── base_page.py    # Ações genéricas do PyAutoGUI (clique, digitação, busca de imagem)
 │   └── login_page.py   # Mapeamento e fluxos específicos da tela de login
 ├── tests/              # Scripts de teste automatizados
-│   ├── __init__.py
+│   |
 │   └── test_login.py   # Suíte de testes com validações PyTest
 ├── conftest.py         # Hooks do PyTest para capturas de tela e configurações globais
 ├── requirements.txt    # Lista de dependências e bibliotecas do Python
@@ -75,31 +75,6 @@ Atualize o instalador de pacotes (`pip`) e instale as dependências diretamente 
   ```
 
 > 💡 **Nota para usuários Linux/macOS:** Se o sistema exibir um aviso sobre ambiente gerenciado pelo sistema (*externally-managed-environment*), você pode usar a flag `--break-system-packages` ou instalar via `pip3 install --user -r requirements.txt`.
-
----
-
-## 🚀 Como Executar os Testes
-
-Com as bibliotecas instaladas na sua máquina, execute os testes diretamente no terminal a partir da raiz do projeto:
-
-- **Execução padrão:**
-  ```bash
-  pytest
-  ```
-
-- **Execução detalhada (modo verboso com exibição de logs):**
-  ```bash
-  pytest -v -s
-  ```
-
-- **Execução de uma suíte específica:**
-  ```bash
-  pytest tests/test_login.py
-  ```
-
-- **Geração de relatórios Allure (opcional):**
-
-
 
 ## 📄 Licença
 
