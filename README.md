@@ -32,8 +32,6 @@ QA_Automation_Project/
 └── README.md           # Documentação completa do projeto
 ```
 
----
-
 ## 🛠️ Pré-requisitos
 
 Antes de iniciar, certifique-se de ter os seguintes componentes instalados em seu ambiente local:
