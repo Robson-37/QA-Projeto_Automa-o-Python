@@ -54,7 +54,7 @@ Como a instalação será feita diretamente no sistema operacional (sem ambiente
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/QA_Automation_Project.git
+git clone https://github.com/Robson-37/QA_Automation_Project.git
 cd QA_Automation_Project
 ```
 
@@ -98,36 +98,8 @@ Com as bibliotecas instaladas na sua máquina, execute os testes diretamente no 
   ```
 
 - **Geração de relatórios Allure (opcional):**
-  ```bash
-  pytest --alluredir=allure-results
-  allure serve allure-results
-  ```
 
----
 
-## 🧩 Como Adicionar Novas Páginas e Testes
-
-1. **Captura de Elementos (`assets/`):**
-   - Tire um print preciso do botão ou campo de texto desejado.
-   - Salve a imagem com nome descritivo em formato `.png` na pasta `assets/` (ex: `assets/btn_submit.png`).
-
-2. **Criação do Page Object (`pages/`):**
-   - Crie um novo arquivo na pasta `pages/` (ex: `pages/home_page.py`).
-   - Crie a classe herdando de `BasePage` e utilize os métodos de interação (`click_element`, `type_text`, `is_element_visible`).
-
-3. **Criação do Teste (`tests/`):**
-   - Crie um arquivo prefixado com `test_` na pasta `tests/` (ex: `tests/test_home.py`).
-   - Instancie a página e escreva asserções claras utilizando `assert`.
-
----
-
-## 📸 Registro de Evidências em Falhas
-
-O arquivo `conftest.py` possui um hook do PyTest que monitora a execução de cada teste. Se algum teste falhar:
-1. O PyAutoGUI captura automaticamente um print da tela do sistema.
-2. A imagem é salva na pasta `logs/` com o formato `FAIL_<nome_do_teste>_<timestamp>.png`.
-
----
 
 ## 📄 Licença
 
