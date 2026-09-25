@@ -13,10 +13,10 @@ class TestLogin:
     @pytest.fixture(autouse=True)
     def setup_page(self):
         options = webdriver.ChromeOptions()
-        options.add_argument("--window-size=1366,768")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(options=options)
+        self.driver.maximize_window()
         self.login_page = LoginPage(self.driver).open()
         yield
         self.driver.quit()
