@@ -18,18 +18,21 @@ Projeto profissional de automação de testes de interface gráfica (GUI) desenv
 
 ```text
 QA_Automation_Project/
-├── assets/             # Prints e recortes dos elementos gráficos (.png)
-├── logs/               # Screenshots e evidências de falhas (gerado automaticamente)
-├── pages/              # Classes do Page Object Model (BasePage, LoginPage, etc.)
-│   |
-│   ├── base_page.py    # Ações genéricas do PyAutoGUI (clique, digitação, busca de imagem)
-│   └── login_page.py   # Mapeamento e fluxos específicos da tela de login
-├── tests/              # Scripts de teste automatizados
-│   |
-│   └── test_login.py   # Suíte de testes com validações PyTest
-├── conftest.py         # Hooks do PyTest para capturas de tela e configurações globais
-├── requirements.txt    # Lista de dependências e bibliotecas do Python
-└── README.md           # Documentação completa do projeto
+.
+├── .pytest_cache/     # Cache do Pytest (dados temporários de execuções anteriores)
+├── .venv/            # Ambiente virtual Python (dependências e bibliotecas do projeto)
+├── __pycache__/      # Ficheiros compilados em bytecode (.pyc) gerados pelo Python
+├── allure-results/   # Ficheiros brutos (JSON/XML) para geração de relatórios do Allure
+├── assets/           # Recursos estáticos auxiliares (imagens, logótipos, estilos)
+├── logs/             # Registos de eventos, rastreios e mensagens de erro da execução
+├── pages/            # Classes do Page Object Model (POM) com mapeamento dos elementos
+├── tests/            # Scripts com os cenários e casos de teste automatizados
+├── .gitattributes    # Regras do Git para gestão de formatos de texto/linha entre SOs
+├── .gitignore        # Lista de ficheiros e pastas ignorados pelo controlo de versões Git
+├── conftest.py       # Configurações globais, fixtures e hooks partilhados do Pytest
+├── login.html        # Página HTML local para testes de interface ou simulações
+├── README.md         # Documentação com instruções de utilização e instalação do projeto
+└── requirements.txt  # Lista de dependências e versões dos pacotes Python do projeto
 ```
 
 ## 🛠️ Pré-requisitos
