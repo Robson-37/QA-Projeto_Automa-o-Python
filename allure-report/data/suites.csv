@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","276","CT04 - Validar submissão sem preencher senha","tests","2026-09-24","passed","2026-09-24","TestLogin","test_login","",""
-"","350","CT03 - Validar tentativa de login com usuário inexistente","tests","2026-09-24","passed","2026-09-24","TestLogin","test_login","",""
-"","331","CT01 - Validar login com credenciais válidas","tests","2026-09-24","passed","2026-09-24","TestLogin","test_login","",""
-"","379","CT02 - Validar login com senha incorreta","tests","2026-09-24","passed","2026-09-24","TestLogin","test_login","",""
